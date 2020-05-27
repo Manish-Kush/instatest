@@ -9,16 +9,16 @@
 		</classes>
 	</test>
 	
-<!-- 	<test name="IpPatientVitalFormTest">
+   <test name="IpPatientVitalFormTest">
 		<classes>
 			<class name="runner.base.patient.IpPatientVitalFormTest" />
 		</classes>
 	</test>
 	
-	<test name="OutPatientVitalFormTest">
+    <test name="OutPatientVitalFormTest">
 		<classes>
 			<class name="runner.base.patient.OutPatientVitalFormTest" />
 		</classes>
-	</test> -->
+	</test>
 
 </suite> <!-- Suite -->

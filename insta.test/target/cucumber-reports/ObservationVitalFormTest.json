@@ -1,0 +1,920 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 43476000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open \"firefox\" browser and load application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firefox\"",
+                  "offset": 5
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.openBrowserAndApplication(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5954000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login with hospital name \"nmc\", user name \"RaziaA\" and password \"RaziaA@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nmc\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"RaziaA\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"RaziaA@12\"",
+                  "offset": 64
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.login(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2256000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Navigate to patient section",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.navigateToPatientSection()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5062000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Navigate to Obseravtion patient list",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToOutPatientList()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-27T18:49:23.171Z",
+        "line": 12,
+        "name": "",
+        "description": "",
+        "id": "observation-patient-list-test-feature;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2265000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Select first patient from list and open toolbar",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.searchPatientAndClickToolbar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3097000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Navigate to Obseravtion case sheet",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionCaseList()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2442000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Navigate to Vitals section",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1260000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks on Add Vitals icon",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.clickAddVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 225000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Fill the vital Detail with Parameters Temp \"37\", Resp \"11\", Pulse \"66\", SystolicBP \"100\", DiastolicBP \"75\", Height \"168\", Weight \"75\" and BMI \"21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"37\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"11\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"66\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"100\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"75\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"168\"",
+                  "offset": 115
+                },
+                {
+                  "val": "\"75\"",
+                  "offset": 129
+                },
+                {
+                  "val": "\"21\"",
+                  "offset": 142
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.addVitalsDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4388000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click Ok button and check message \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 34
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.saveAndCheck(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1244000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Click close button",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.closeVitalForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@Valid"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 67398000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open \"firefox\" browser and load application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firefox\"",
+                  "offset": 5
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.openBrowserAndApplication(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8861000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login with hospital name \"nmc\", user name \"RaziaA\" and password \"RaziaA@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nmc\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"RaziaA\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"RaziaA@12\"",
+                  "offset": 64
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.login(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2272000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Navigate to patient section",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.navigateToPatientSection()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4117000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Navigate to Obseravtion patient list",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToOutPatientList()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-27T18:50:35.110Z",
+        "line": 24,
+        "name": "",
+        "description": "",
+        "id": "observation-patient-list-test-feature;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2257000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Select first patient from list and open toolbar",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.searchPatientAndClickToolbar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2366000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Navigate to Obseravtion case sheet",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionCaseList()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3779000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Navigate to Vitals section",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1291000000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User clicks on Add Vitals icon",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.clickAddVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1614000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Fill the vital detail with high range Parameters Temp \"137\", Resp \"11\", Pulse \"166\", SystolicBP \"80\", DiastolicBP \"95\", Height \"168\", Weight \"75\" and BMI \"21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"137\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"11\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"166\"",
+                  "offset": 78
+                },
+                {
+                  "val": "\"80\"",
+                  "offset": 96
+                },
+                {
+                  "val": "\"95\"",
+                  "offset": 114
+                },
+                {
+                  "val": "\"168\"",
+                  "offset": 127
+                },
+                {
+                  "val": "\"75\"",
+                  "offset": 141
+                },
+                {
+                  "val": "\"21\"",
+                  "offset": 154
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.addVitalsDetailsWithRange(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1264000000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Click Ok button and check message \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 34
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.saveAndCheck(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1243000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Click close button",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.closeVitalForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@Valid"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 72416000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open \"firefox\" browser and load application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firefox\"",
+                  "offset": 5
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.openBrowserAndApplication(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7313000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login with hospital name \"nmc\", user name \"RaziaA\" and password \"RaziaA@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nmc\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"RaziaA\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"RaziaA@12\"",
+                  "offset": 64
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.login(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2247000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Navigate to patient section",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.navigateToPatientSection()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3034000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Navigate to Obseravtion patient list",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToOutPatientList()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-27T18:52:11.588Z",
+        "line": 36,
+        "name": "",
+        "description": "",
+        "id": "observation-patient-list-test-feature;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2310000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Select first patient from list and open toolbar",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.searchPatientAndClickToolbar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3881000000,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Navigate to Obseravtion case sheet",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionCaseList()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2398000000,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "Navigate to Vitals section",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1249000000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User clicks on Add Vitals icon",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.clickAddVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 199000000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "Fill the vital Detail with Parameters Temp \"\", Resp \"\", Pulse \"\", SystolicBP \"\", DiastolicBP \"\", Height \"\", Weight \"\" and BMI \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 62
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 77
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 93
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 115
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 126
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.addVitalsDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8445000000,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Click Ok button and check message \"Please enter atleast one value\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Please enter atleast one value\"",
+                  "offset": 34
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.saveAndCheck(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2314000000,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Click close button",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.closeVitalForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@Invalid"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 87936000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Open \"firefox\" browser and load application",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firefox\"",
+                  "offset": 5
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.openBrowserAndApplication(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 13545000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Login with hospital name \"nmc\", user name \"RaziaA\" and password \"RaziaA@12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"nmc\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"RaziaA\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"RaziaA@12\"",
+                  "offset": 64
+                }
+              ],
+              "location": "sd.base.security.LoginToApplication.login(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3518000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Navigate to patient section",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.navigateToPatientSection()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 17048000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Navigate to Obseravtion patient list",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToOutPatientList()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-27T18:53:57.408Z",
+        "line": 48,
+        "name": "",
+        "description": "",
+        "id": "observation-patient-list-test-feature;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2315000000,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Select first patient from list and open toolbar",
+            "match": {
+              "location": "sd.base.patient.patient.PatientSection.searchPatientAndClickToolbar()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7696000000,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Navigate to Obseravtion case sheet",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionCaseList()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4917000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "Navigate to Vitals section",
+            "match": {
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.navigateToObseravtionVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1352000000,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "User clicks on Add Vitals icon",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.clickAddVitals()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 738000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "Fill the vital Detail with Parameters Temp \"37\", Resp \"11\", Pulse \"66\", SystolicBP \"100\", DiastolicBP \"75\", Height \"\", Weight \"\" and BMI \"21\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"37\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"11\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"66\"",
+                  "offset": 66
+                },
+                {
+                  "val": "\"100\"",
+                  "offset": 83
+                },
+                {
+                  "val": "\"75\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 115
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 126
+                },
+                {
+                  "val": "\"21\"",
+                  "offset": 137
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.addVitalsDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1833000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "Click Ok button and check message \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 34
+                }
+              ],
+              "location": "sd.base.patient.patient.VitalForm.saveAndCheck(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1229000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "Click close button",
+            "match": {
+              "location": "sd.base.patient.patient.VitalForm.closeVitalForm()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12027000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Click vital form save button and check message \"All readings should contain the value in mandatory fields\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"All readings should contain the value in mandatory fields\"",
+                  "offset": 47
+                }
+              ],
+              "location": "sd.base.patient.observationpatient.ObservationPatientVitalForm.saveVitalForm(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@web"
+          },
+          {
+            "name": "@InValid"
+          }
+        ]
+      }
+    ],
+    "name": "Observation Patient List Test feature",
+    "description": "",
+    "id": "observation-patient-list-test-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/scenarios/base/patient/ObservationVitalForm.feature",
+    "tags": [
+      {
+        "name": "@web",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
