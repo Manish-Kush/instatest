@@ -1,0 +1,5 @@
+runner/base/pf/BaseRunner.class
+runner/base/patient/ObservationVitalFormTest.class
+runner/base/patient/IpPatientVitalFormTest.class
+runner/base/master/DepartmentTest.class
+runner/base/patient/OutPatientVitalFormTest.class
